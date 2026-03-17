@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PlayStore Website</title>
+  <link rel="stylesheet" href="playstore.css" />
+  <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/300/300218.png">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER — SINGLE NAVBAR ONLY -->
+  <header class="header">
+    <div class="header-left">
+      <button class="hamburger" id="hamburgerBtn">
+        <span class="material-icons-round">menu</span>
+      </button>
+      <div class="logo" style="cursor:pointer" id="logoBtn">
+        <div class="logo-icon">
+          <span class="logo-tri t1"></span><span class="logo-tri t2"></span>
+          <span class="logo-tri t3"></span><span class="logo-tri t4"></span>
+        </div>
+        <span class="logo-text">Play Store</span>
+      </div>
+    </div>
+
+    <nav class="main-nav" id="mainNav">
+      <button class="nav-link active" data-nav="home"><span class="material-icons-round">home</span><span>Home</span></button>
+      <button class="nav-link" data-nav="about"><span class="material-icons-round">info</span><span>About</span></button>
+      <button class="nav-link" data-nav="blogs"><span class="material-icons-round">article</span><span>Blogs</span></button>
+      <button class="nav-link" data-nav="pricing"><span class="material-icons-round">sell</span><span>Pricing</span></button>
+      <button class="nav-link" data-nav="contact"><span class="material-icons-round">mail</span><span>Contact</span></button>
+      <button class="nav-link" data-nav="auth"><span class="material-icons-round">person</span><span>Login</span></button>
+    </nav>
+
+    <div class="search-bar" id="searchBarEl">
+      <span class="material-icons-round search-icon">search</span>
+      <input type="text" id="searchInput" placeholder="Search apps & games..." />
+      <button class="mic-btn"><span class="material-icons-round">mic</span></button>
+    </div>
+
+    <div class="header-right">
+      <button class="icon-btn"><span class="material-icons-round">notifications_none</span></button>
+      <button class="theme-btn" id="themeBtn">
+        <span class="material-icons-round" id="themeIcon">dark_mode</span>
+      </button>
+      <div class="avatar" id="avatarBtn">M</div>
+    </div>
+  </header>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <div class="avatar large">M</div>
+      <div>
+        <p class="sidebar-name">Meyyappan Subramanian</p>
+        <p class="sidebar-email">Meyyappan@gmail.com</p>
+      </div>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="#" class="sidebar-link active" data-nav="home"><span class="material-icons-round">home</span> Home</a>
+      <a href="#" class="sidebar-link" data-nav="about"><span class="material-icons-round">info</span> About</a>
+      <a href="#" class="sidebar-link" data-nav="blogs"><span class="material-icons-round">article</span> Blogs</a>
+      <a href="#" class="sidebar-link" data-nav="pricing"><span class="material-icons-round">sell</span> Pricing</a>
+      <a href="#" class="sidebar-link" data-nav="contact"><span class="material-icons-round">mail</span> Contact</a>
+      <a href="#" class="sidebar-link" data-nav="auth"><span class="material-icons-round">person</span> Login / Sign Up</a>
+      <hr/>
+      <a href="#" class="sidebar-link" data-nav="educational"><span class="material-icons-round">school</span> Educational</a>
+      <a href="#" class="sidebar-link" data-nav="entertainment"><span class="material-icons-round">movie</span> Entertainment</a>
+      <a href="#" class="sidebar-link" data-nav="informational"><span class="material-icons-round">info</span> Informational</a>
+      <a href="#" class="sidebar-link" data-nav="productivity"><span class="material-icons-round">bolt</span> Productivity</a>
+      <hr/>
+    </nav>
+  </aside>
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <!-- MAIN CONTENT -->
+  <main class="main" id="mainContent">
+
+    <!-- HOME PAGE — tabs-container REMOVED -->
+    <div id="homePage">
+      <section class="hero-section" id="heroSection">
+        <div class="hero-slider" id="heroSlider">
+          <div class="hero-slide" style="background:linear-gradient(135deg,#1a237e,#283593)">
+            <div class="hero-content">
+              <span class="hero-tag">Editor's Choice</span>
+              <h2>Clash of Realms</h2>
+              <p>Epic strategy battles await you in this stunning 3D world</p>
+              <div class="hero-meta"><span class="material-icons-round">star</span>4.8 &nbsp;·&nbsp; Strategy &nbsp;·&nbsp; Free</div>
+              <button class="hero-btn">Install Now</button>
+            </div>
+            <div class="hero-img">🎮</div>
+          </div>
+          <div class="hero-slide" style="background:linear-gradient(135deg,#880e4f,#ad1457)">
+            <div class="hero-content">
+              <span class="hero-tag">Top Pick</span>
+              <h2>Zomato Ultra</h2>
+              <p>Order food from 50,000+ restaurants near you</p>
+              <div class="hero-meta"><span class="material-icons-round">star</span>4.6 &nbsp;·&nbsp; Food &nbsp;·&nbsp; Free</div>
+              <button class="hero-btn">Install Now</button>
+            </div>
+            <div class="hero-img">🍕</div>  
+          </div>
+          <div class="hero-slide" style="background:linear-gradient(135deg,#1b5e20,#2e7d32)">
+            <div class="hero-content">
+              <span class="hero-tag">New Release</span>
+              <h2>MindSpace</h2>
+              <p>Meditate, sleep better, and reduce stress daily</p>
+              <div class="hero-meta"><span class="material-icons-round">star</span>4.9 &nbsp;·&nbsp; Health &nbsp;·&nbsp; Free</div>
+              <button class="hero-btn">Install Now</button>
+            </div>
+            <div class="hero-img">🧘</div>
+          </div>
+        </div>
+        <div class="hero-dots">
+          <span class="dot active"></span><span class="dot"></span><span class="dot"></span>
+        </div>
+      </section>
+
+      <div id="appSections"></div>
+    </div>
+
+    <!-- SERVICE PAGES -->
+    <div id="educationalPage" class="page-section" style="display:none"></div>
+    <div id="entertainmentPage" class="page-section" style="display:none"></div>
+    <div id="informationalPage" class="page-section" style="display:none"></div>
+    <div id="productivityPage" class="page-section" style="display:none"></div>
+
+    <!-- AUTH PAGE -->
+    <div id="authPage" class="page-section" style="display:none">
+      <div class="auth-universe">
+        <div class="auth-left">
+          <div class="auth-orb auth-orb1"></div>
+          <div class="auth-orb auth-orb2"></div>
+          <div class="auth-orb auth-orb3"></div>
+          <div class="auth-grid-bg"></div>
+          <div class="auth-left-content">
+            <div class="auth-logo">
+              <div class="logo-icon large-logo">
+                <span class="logo-tri t1"></span><span class="logo-tri t2"></span>
+                <span class="logo-tri t3"></span><span class="logo-tri t4"></span>
+              </div>
+              <span>Play Store</span>
+            </div>
+            <h2 class="auth-left-title">Your World of<br/><span class="auth-gradient-text">Apps & Games</span><br/>Awaits You</h2>
+            <p class="auth-left-desc">Join 500M+ users discovering amazing apps every day. Sign in to unlock your personalized experience.</p>
+            <div class="auth-feature-pills">
+              <div class="auth-pill">🎮 10,000+ Games</div>
+              <div class="auth-pill">📱 3M+ Apps</div>
+              <div class="auth-pill">🎵 80M+ Songs</div>
+              <div class="auth-pill">🔒 100% Safe</div>
+            </div>
+            <div class="auth-floating-cards">
+              <div class="auth-fc auth-fc1">🏆 <span>Top Rated</span></div>
+              <div class="auth-fc auth-fc2">⚡ <span>Instant Install</span></div>
+              <div class="auth-fc auth-fc3">🆓 <span>Free Forever</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="auth-right">
+          <div class="auth-tab-toggle">
+            <button class="auth-tab-btn active" id="loginTabBtn"><span class="material-icons-round">login</span> Login</button>
+            <button class="auth-tab-btn" id="signupTabBtn"><span class="material-icons-round">person_add</span> Sign Up</button>
+            <div class="auth-tab-slider" id="authTabSlider"></div>
+          </div>
+          <div class="auth-form-wrap" id="loginForm">
+            <div class="auth-form-header"><h3>Welcome Back! 👋</h3><p>Sign in to continue your journey</p></div>
+            <div class="auth-social-row">
+              <button class="auth-social-btn" id="googleBtn">
+                <svg width="18" height="18" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.18 1.48-4.97 2.29-8.16 2.29-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>
+                Continue with Google
+              </button>
+              <button class="auth-social-btn auth-github-btn"><span class="material-icons-round">code</span> GitHub</button>
+            </div>
+            <div class="auth-divider"><span>or login with email</span></div>
+            <div class="auth-input-group">
+              <div class="auth-input-wrap">
+                <span class="material-icons-round auth-input-icon">email</span>
+                <input type="email" id="loginEmail" placeholder=" " />
+                <label>Email Address</label>
+                <div class="auth-input-line"></div>
+              </div>
+            </div>
+            <div class="auth-input-group">
+              <div class="auth-input-wrap">
+                <span class="material-icons-round auth-input-icon">lock</span>
+                <input type="password" id="loginPass" placeholder=" " />
+                <label>Password</label>
+                <div class="auth-input-line"></div>
+                <button class="auth-eye-btn" data-target="loginPass"><span class="material-icons-round">visibility</span></button>
+              </div>
+            </div>
+            <div class="auth-options-row">
+              <label class="auth-checkbox-label"><input type="checkbox" id="rememberMe"/><span class="auth-checkbox-custom"></span>Remember me</label>
+              <button class="auth-forgot-btn">Forgot password?</button>
+            </div>
+            <button class="auth-submit-btn" id="loginSubmitBtn"><span>Sign In</span><span class="material-icons-round">arrow_forward</span><div class="auth-btn-ripple"></div></button>
+            <p class="auth-switch-text">Don't have an account? <button class="auth-switch-btn" id="goToSignup">Create one →</button></p>
+          </div>
+          <div class="auth-form-wrap" id="signupForm" style="display:none">
+            <div class="auth-form-header"><h3>Join Play Store! 🚀</h3><p>Create your account in seconds</p></div>
+            <div class="auth-social-row">
+              <button class="auth-social-btn">
+                <svg width="18" height="18" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.18 1.48-4.97 2.29-8.16 2.29-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>
+                Sign up with Google
+              </button>
+              <button class="auth-social-btn auth-github-btn"><span class="material-icons-round">code</span> GitHub</button>
+            </div>
+            <div class="auth-divider"><span>or create with email</span></div>
+            <div class="auth-name-row">
+              <div class="auth-input-group"><div class="auth-input-wrap"><span class="material-icons-round auth-input-icon">person</span><input type="text" id="signupFirst" placeholder=" "/><label>First Name</label><div class="auth-input-line"></div></div></div>
+              <div class="auth-input-group"><div class="auth-input-wrap"><span class="material-icons-round auth-input-icon">person_outline</span><input type="text" id="signupLast" placeholder=" "/><label>Last Name</label><div class="auth-input-line"></div></div></div>
+            </div>
+            <div class="auth-input-group"><div class="auth-input-wrap"><span class="material-icons-round auth-input-icon">email</span><input type="email" id="signupEmail" placeholder=" "/><label>Email Address</label><div class="auth-input-line"></div></div></div>
+            <div class="auth-input-group">
+              <div class="auth-input-wrap"><span class="material-icons-round auth-input-icon">lock</span><input type="password" id="signupPass" placeholder=" "/><label>Password</label><div class="auth-input-line"></div><button class="auth-eye-btn" data-target="signupPass"><span class="material-icons-round">visibility</span></button></div>
+              <div class="password-strength" id="passStrength">
+                <div class="strength-bars"><div class="strength-bar" id="sb1"></div><div class="strength-bar" id="sb2"></div><div class="strength-bar" id="sb3"></div><div class="strength-bar" id="sb4"></div></div>
+                <span class="strength-label" id="strengthLabel">Enter password</span>
+              </div>
+            </div>
+            <div class="auth-input-group"><div class="auth-input-wrap"><span class="material-icons-round auth-input-icon">lock_clock</span><input type="password" id="signupConfirm" placeholder=" "/><label>Confirm Password</label><div class="auth-input-line"></div></div></div>
+            <label class="auth-checkbox-label auth-terms"><input type="checkbox" id="agreeTerms"/><span class="auth-checkbox-custom"></span>I agree to the <button class="auth-link-btn">Terms</button> and <button class="auth-link-btn">Privacy Policy</button></label>
+            <button class="auth-submit-btn auth-submit-green" id="signupSubmitBtn"><span>Create Account</span><span class="material-icons-round">rocket_launch</span><div class="auth-btn-ripple"></div></button>
+            <p class="auth-switch-text">Already have an account? <button class="auth-switch-btn" id="goToLogin">Sign in →</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="aboutPage" class="page-section" style="display:none"></div>
+    <div id="blogsPage" class="page-section" style="display:none"></div>
+    <div id="pricingPage" class="page-section" style="display:none"></div>
+    <div id="contactPage" class="page-section" style="display:none"></div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <div class="logo-icon"><span class="logo-tri t1"></span><span class="logo-tri t2"></span><span class="logo-tri t3"></span><span class="logo-tri t4"></span></div>
+          <span class="footer-logo-text">Play Store</span>
+        </div>
+        <p class="footer-desc">Discover millions of apps, games, music, movies, and more. Your one-stop digital marketplace.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <a href="#" onclick="navigateTo('home')">Home</a>
+          <a href="#" onclick="navigateTo('about')">About</a>
+          <a href="#" onclick="navigateTo('blogs')">Blogs</a>
+          <a href="#" onclick="navigateTo('pricing')">Pricing</a>
+          <a href="#" onclick="navigateTo('contact')">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <a href="#" onclick="navigateTo('educational')">Educational</a>
+          <a href="#" onclick="navigateTo('entertainment')">Entertainment</a>
+          <a href="#" onclick="navigateTo('informational')">Informational</a>
+          <a href="#" onclick="navigateTo('productivity')">Productivity</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-middle">
+      <div class="footer-badges">
+        <div class="store-badge"><span class="material-icons-round">android</span><div><span class="badge-sub">Get it on</span><span class="badge-main">Google Play</span></div></div>
+        <div class="store-badge"><span class="material-icons-round">phone_iphone</span><div><span class="badge-sub">Download on the</span><span class="badge-main">App Store</span></div></div>
+        <div class="store-badge"><span class="material-icons-round">desktop_windows</span><div><span class="badge-sub">Available on</span><span class="badge-main">Windows</span></div></div>
+      </div>
+      <div class="footer-newsletter">
+        <p>Subscribe to our newsletter</p>
+        <div class="newsletter-input">
+          <input type="email" placeholder="Enter your email..." />
+          <button>Subscribe</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Play Store. All rights reserved.</p>
+      <div class="footer-bottom-links"><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Cookies</a><a href="#">Sitemap</a></div>
+    </div>
+  </footer>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="modal">
+      <button class="modal-close" id="modalClose"><span class="material-icons-round">close</span></button>
+      <div class="modal-header">
+        <div class="modal-icon" id="modalIcon"></div>
+        <div class="modal-info"><h2 id="modalName"></h2><p id="modalDev"></p>
+          <div class="modal-rating"><span class="material-icons-round">star</span><span id="modalRating"></span><span class="modal-downloads" id="modalDownloads"></span></div>
+        </div>
+      </div>
+      <div class="modal-tags" id="modalTags"></div>
+      <p class="modal-desc" id="modalDesc"></p>
+      <div class="modal-screenshots" id="modalScreenshots"></div>
+      <div class="modal-actions">
+        <button class="btn-install" id="installBtn">Install</button>
+        <button class="btn-wishlist"><span class="material-icons-round">favorite_border</span> Wishlist</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <script src="playstore.js"></script>
+</body>
+</html>

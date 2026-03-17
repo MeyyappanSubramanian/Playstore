@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PlayStore Website</title>
+  <link rel="stylesheet" href="playstore.css" />
+  <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/300/300218.png">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-left">
+      <button class="hamburger" id="hamburgerBtn">
+        <span class="material-icons-round">menu</span>
+      </button>
+      <div class="logo">
+        <div class="logo-icon">
+          <span class="logo-tri t1"></span>
+          <span class="logo-tri t2"></span>
+          <span class="logo-tri t3"></span>
+          <span class="logo-tri t4"></span>
+        </div>
+        <span class="logo-text">Play Store</span>
+      </div>
+    </div>
+    <div class="search-bar">
+      <span class="material-icons-round search-icon">search</span>
+      <input type="text" id="searchInput" placeholder="Search apps & games..." />
+      <button class="mic-btn"><span class="material-icons-round">mic</span></button>
+    </div>
+    <div class="header-right">
+      <button class="icon-btn"><span class="material-icons-round">notifications_none</span></button>
+      <button class="theme-btn" id="themeBtn">
+        <span class="material-icons-round" id="themeIcon">dark_mode</span>
+      </button>
+      <div class="avatar">M</div>
+    </div>
+  </header>
+
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <div class="avatar large">M</div>
+      <div>
+        <p class="sidebar-name">Meyyappan Subramanian </p>
+        <p class="sidebar-email">Meyyappan@gmail.com</p>
+      </div>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="#" class="sidebar-link active"><span class="material-icons-round">home</span> Home</a>
+      <a href="#" class="sidebar-link"><span class="material-icons-round">games</span> Games</a>
+      <a href="#" class="sidebar-link"><span class="material-icons-round">apps</span> Apps</a>
+      <a href="#" class="sidebar-link"><span class="material-icons-round">movie</span> Movies</a>
+      <a href="#" class="sidebar-link"><span class="material-icons-round">library_books</span> Books</a>
+      <a href="#" class="sidebar-link"><span class="material-icons-round">child_care</span> Kids</a>
+      <hr/>
+      <a href="#" class="sidebar-link"><span class="material-icons-round">account_circle</span> My Account</a>
+      <a href="#" class="sidebar-link"><span class="material-icons-round">download</span> My Library</a>
+      <a href="#" class="sidebar-link"><span class="material-icons-round">card_giftcard</span> Redeem</a>
+      <a href="#" class="sidebar-link"><span class="material-icons-round">settings</span> Settings</a>
+    </nav>
+  </aside>
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <main class="main">
+    <div class="tabs-container">
+      <div class="tabs" id="tabs">
+        <button class="tab active" data-cat="all"><span class="material-icons-round">home</span> Home</button>
+        <button class="tab" data-cat="games"><span class="material-icons-round">sports_esports</span> Games</button>
+        <button class="tab" data-cat="apps"><span class="material-icons-round">apps</span> Apps</button>
+        <button class="tab" data-cat="food"><span class="material-icons-round">restaurant</span> Food & Drinks</button>
+        <button class="tab" data-cat="education"><span class="material-icons-round">school</span> Education</button>
+        <button class="tab" data-cat="social"><span class="material-icons-round">people</span> Social</button>
+        <button class="tab" data-cat="health"><span class="material-icons-round">favorite</span> Health</button>
+        <button class="tab" data-cat="travel"><span class="material-icons-round">flight</span> Travel</button>
+        <button class="tab" data-cat="music"><span class="material-icons-round">music_note</span> Music</button>
+      </div>
+    </div>
+
+    <section class="hero-section" id="heroSection">
+      <div class="hero-slider" id="heroSlider">
+        <div class="hero-slide" style="background:linear-gradient(135deg,#1a237e,#283593)">
+          <div class="hero-content">
+            <span class="hero-tag">Editor's Choice</span>
+            <h2>Clash of Realms</h2>
+            <p>Epic strategy battles await you in this stunning 3D world</p>
+            <div class="hero-meta"><span class="material-icons-round">star</span>4.8 &nbsp;·&nbsp; Strategy &nbsp;·&nbsp; Free</div>
+            <button class="hero-btn">Install Now</button>
+          </div>
+          <div class="hero-img">🎮</div>
+        </div>
+        <div class="hero-slide" style="background:linear-gradient(135deg,#880e4f,#ad1457)">
+          <div class="hero-content">
+            <span class="hero-tag">Top Pick</span>
+            <h2>Zomato Ultra</h2>
+            <p>Order food from 50,000+ restaurants near you</p>
+            <div class="hero-meta"><span class="material-icons-round">star</span>4.6 &nbsp;·&nbsp; Food &nbsp;·&nbsp; Free</div>
+            <button class="hero-btn">Install Now</button>
+          </div>
+          <div class="hero-img">🍕</div>
+        </div>
+        <div class="hero-slide" style="background:linear-gradient(135deg,#1b5e20,#2e7d32)">
+          <div class="hero-content">
+            <span class="hero-tag">New Release</span>
+            <h2>MindSpace</h2>
+            <p>Meditate, sleep better, and reduce stress daily</p>
+            <div class="hero-meta"><span class="material-icons-round">star</span>4.9 &nbsp;·&nbsp; Health &nbsp;·&nbsp; Free</div>
+            <button class="hero-btn">Install Now</button>
+          </div>
+          <div class="hero-img">🧘</div>
+        </div>
+      </div>
+      <div class="hero-dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </section>
+
+    <section class="section cat-section" id="catSection">
+      <div class="categories-grid">
+        <div class="cat-card" data-cat="games"><div class="cat-icon" style="background:#e8f5e9">🎮</div><span>Games</span></div>
+        <div class="cat-card" data-cat="apps"><div class="cat-icon" style="background:#e3f2fd">📱</div><span>Apps</span></div>
+        <div class="cat-card" data-cat="food"><div class="cat-icon" style="background:#fce4ec">🍔</div><span>Food & Drinks</span></div>
+        <div class="cat-card" data-cat="education"><div class="cat-icon" style="background:#fff3e0">📚</div><span>Education</span></div>
+        <div class="cat-card" data-cat="social"><div class="cat-icon" style="background:#f3e5f5">💬</div><span>Social</span></div>
+        <div class="cat-card" data-cat="health"><div class="cat-icon" style="background:#e8eaf6">❤️</div><span>Health</span></div>
+        <div class="cat-card" data-cat="travel"><div class="cat-icon" style="background:#e0f7fa">✈️</div><span>Travel</span></div>
+        <div class="cat-card" data-cat="music"><div class="cat-icon" style="background:#fafafa">🎵</div><span>Music</span></div>
+      </div>
+    </section>
+
+    <div id="appSections"></div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <div class="logo-icon">
+            <span class="logo-tri t1"></span>
+            <span class="logo-tri t2"></span>
+            <span class="logo-tri t3"></span>
+            <span class="logo-tri t4"></span>
+          </div>
+          <span class="footer-logo-text">Play Store</span>
+        </div>
+        <p class="footer-desc">Discover millions of apps, games, music, movies, and more. Your one-stop digital marketplace.</p>
+        <div class="footer-social">
+          <!-- <a href="#" class="social-btn"><span class="material-icons-round">facebook</span></a>
+          <a href="#" class="social-btn"><span class="material-icons-round">twitter</span></a>
+          <a href="#" class="social-btn"><span class="material-icons-round">instagram</span></a>
+          <a href="#" class="social-btn"><span class="material-icons-round">youtube_activity</span></a> -->
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Categories</h4>
+          <a href="#">Games</a>
+          <a href="#">Apps</a>
+          <a href="#">Food & Drinks</a>
+          <a href="#">Education</a>
+          <a href="#">Health</a>
+          <a href="#">Music</a>
+        </div>
+    </div>
+
+    <div class="footer-middle">
+      <div class="footer-badges">
+        <div class="store-badge">
+          <span class="material-icons-round">android</span>
+          <div>
+            <span class="badge-sub">Get it on</span>
+            <span class="badge-main">Google Play</span>
+          </div>
+        </div>
+        <div class="store-badge">
+          <span class="material-icons-round">apple</span>
+          <div>
+            <span class="badge-sub">Download on the</span>
+            <span class="badge-main">App Store</span>
+          </div>
+        </div>
+        <div class="store-badge">
+          <span class="material-icons-round">window</span>
+          <div>
+            <span class="badge-sub">Available on</span>
+            <span class="badge-main">Windows</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-newsletter">
+        <p>Subscribe to our newsletter</p>
+        <div class="newsletter-input">
+          <input type="email" placeholder="Enter your email..." />
+          <button>Subscribe</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Play Store. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Cookies</a>
+        <a href="#">Sitemap</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="modal">
+      <button class="modal-close" id="modalClose"><span class="material-icons-round">close</span></button>
+      <div class="modal-header">
+        <div class="modal-icon" id="modalIcon"></div>
+        <div class="modal-info">
+          <h2 id="modalName"></h2>
+          <p id="modalDev"></p>
+          <div class="modal-rating">
+            <span class="material-icons-round">star</span>
+            <span id="modalRating"></span>
+            <span class="modal-downloads" id="modalDownloads"></span>
+          </div>
+        </div>
+      </div>
+      <div class="modal-tags" id="modalTags"></div>
+      <p class="modal-desc" id="modalDesc"></p>
+      <div class="modal-screenshots" id="modalScreenshots"></div>
+      <div class="modal-actions">
+        <button class="btn-install" id="installBtn">Install</button>
+        <button class="btn-wishlist"><span class="material-icons-round">favorite_border</span> Wishlist</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <script src="playstore.js"></script>
+</body>
+</html>
